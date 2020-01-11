@@ -1,0 +1,49 @@
+">^.^<--------------------------
+" Normal Settings
+">^.^<--------------------------
+
+set number " show line number, `nonu[mber]` to disable
+
+">^.^<--------------------------
+" Syntax & Highlight
+">^.^<--------------------------
+
+syntax enable " syntax highlight
+set hlsearch " highlight all the search matches, `nohlsearch` to hide
+set incsearch " real-time search, show/update matches on typing keyword
+
+">^.^<--------------------------
+" Mappings
+">^.^<--------------------------
+
+let mapleader=","
+
+" normal mode, disallow nested/recursive mappings
+" <silent>: NOT show the command line
+nnoremap <silent> <leader>w :w<CR>
+nnoremap <silent> <leader>q :q<CR>
+
+nnoremap <silent> <leader>bn :bnext<CR>
+nnoremap <silent> <leader>bp :bprevious<CR>
+nnoremap <silent> <leader>bd :bdelete<CR>
+nnoremap <silent> <leader>bl :buffers<CR>
+
+nnoremap <silent> <leader>n :set number<CR>
+nnoremap <silent> <leader>nn :set nonumber<CR>
+
+nnoremap <silent> <leader>nh :nohlsearch<CR>
+
+nnoremap <silent> <leader>ss :source ~/.vimrc<CR>
+
+">^.^<--------------------------
+" Status line
+">^.^<--------------------------
+
+set showcmd " show file status in the last line
+set laststatus=2 " always show the status line
+" F: file path; y: file type [vim]; r: read only [RO]; m: modified [+]
+" *: TODO ?
+" =: separation space between left and right
+" fenc: fileencoding; enc: encoding; bomb: ByteOrderMark
+" l: current line number; L: lines count; c: current column number; p: percent
+set statusline=[%F]%y%r%m%*%=[%{(&fenc==\"\")?&enc:&fenc}%{(&bomb?\",BOM\":\"\")}]\ [L:%l/%L,C:%c][%p%%]
