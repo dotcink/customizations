@@ -1,4 +1,7 @@
 
+IS_ZSH="$ZSH_VERSION"
+IS_BASH="$BASH_VERSION"
+
 ########  ########
 # shell
 ########  ########
@@ -9,11 +12,16 @@ export HISTCONTROL=ignoreboth:erasedups
 export HISTFILESIZE=999999
 export HISTSIZE=999999
 # append, instead of overwriting
-shopt -s histappend
+if [[ $IS_BASH ]]; then
+  shopt -s histappend
+fi
 
 # colorized
 alias ls='ls -G'
 alias ll='ls -l'
+
+# proxy
+. $HOME/.bashrc_proxy
 
 ########  ########
 # vim
