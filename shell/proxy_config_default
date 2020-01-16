@@ -1,0 +1,6 @@
+# vim: filetype=sh
+#
+# Usage:
+#   source $this
+
+export http_proxy_value=

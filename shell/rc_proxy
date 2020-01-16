@@ -1,5 +1,13 @@
+# vim: ft=sh
+#
+# Usage:
+#   source $this
+
 PROXY_CONFIG=$HOME/.proxy_config
-[[ -f $PROXY_CONFIG ]] && . $PROXY_CONFIG
+
+# clone default proxy config if not exist
+[[ -f $PROXY_CONFIG ]] || cp -v $HOME/customizations/shell/proxy_config_default $PROXY_CONFIG
+. $PROXY_CONFIG
 
 function set_proxy() {
   [[ -f $PROXY_CONFIG ]] && . $PROXY_CONFIG

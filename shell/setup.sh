@@ -1,8 +1,14 @@
-BASE_DIR=$(dirname $0)
+# vim: ft=sh
 
-PROXY_CONFIG=$HOME/.proxy_config
-# create if non-exist
-[[ ! -f $PROXY_CONFIG ]] && touch $PROXY_CONFIG
-ln $HOME/customizations/shell/bashrc_proxy.sh $HOME/.bashrc_proxy
+BASE_DIR=$(dirname $0)
+SHRC_PROXY=$HOME/.shrc_proxy
+
+# auto clone shrc_proxy if not exist
+if [[ -f $SHRC_PROXY ]]; then
+  echo "$SHRC_PROXY already exist"
+else
+  ln -v $HOME/customizations/shell/rc_proxy $SHRC_PROXY
+fi
+. $SHRC_PROXY
 
 $BASE_DIR/zsh/setup.sh
