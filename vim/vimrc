@@ -1,8 +1,15 @@
+" vim: ft=vim
+
 ">^.^<--------------------------
 " Normal Settings
 ">^.^<--------------------------
 
 set number " show line number, `nonu[mber]` to disable
+
+" auto set Vim options from the beginning/ending 3 lines of files to edit
+" may be disabled by default for root user
+set modeline
+set modelines=3
 
 ">^.^<--------------------------
 " Syntax & Highlight
