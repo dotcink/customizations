@@ -1,0 +1,7 @@
+# Usage:
+#
+# [include]
+# 	path = ~/customizations/git/config
+
+[alias]
+  tree = log --graph --oneline --all
