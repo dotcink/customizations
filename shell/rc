@@ -1,0 +1,3 @@
+# vim: ft=sh
+
+source $HOME/customizations/shell/rc_proxy
