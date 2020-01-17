@@ -1,3 +1,7 @@
 # vim: ft=sh
+#
+# Usage:
+#   source $this
 
+source $HOME/customizations/common/shrc
 source $HOME/customizations/shell/rc_proxy

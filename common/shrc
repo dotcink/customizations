@@ -1,0 +1,40 @@
+# vim: ft=sh
+#
+# common shell rc of this repo
+#
+# Usage:
+#   source $this
+
+# Include a shared common rc file to local.
+#
+# $1: local(target) rc file
+# $2: include command to write to the target file
+# $3: RegExp to check whether it's already included
+# $4: whether create file if non exist
+function include_rc_to_local()
+{
+  target=$1
+  include_command=$2
+  check_pattern=$3
+  can_create=$4
+
+  # auto create
+  if [ ! -f "$target" ] && [ "$can_create" ]; then
+    touch "$target"
+    echo "$target created"
+  fi
+
+  # check writable
+  if [[ ! -w "$target" ]]; then
+    echo "Base rc '$target' is NOT existent or writable."
+    return
+  fi
+
+  # include
+  if [ "$(grep -c "$check_pattern" "$target")" = 0 ]; then
+    echo "\n$include_command" >> $target
+    echo "Appended '$include_command' to '$target'"
+  fi
+}
+
+export include_rc_to_local
