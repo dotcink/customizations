@@ -1,0 +1,3 @@
+[submodule "theme/solarized"]
+	path = theme/solarized
+	url = https://github.com/altercation/solarized
