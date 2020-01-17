@@ -1,0 +1,9 @@
+# vim: ft=sh
+#
+# Usage:
+#   source $this
+
+if [ "$IS_ZSH" ]; then
+  export ZSH_THEME='agnoster'
+  source $ZSH/oh-my-zsh.sh # apply above theme
+fi

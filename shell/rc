@@ -5,3 +5,4 @@
 
 source $HOME/customizations/common/shrc
 source $HOME/customizations/shell/rc_proxy
+source $HOME/customizations/shell/rc_theme

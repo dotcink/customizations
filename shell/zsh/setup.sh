@@ -8,3 +8,8 @@ sh -c "$(curl $CURL_PROXY_OPTION -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/ma
 # Solarized color theme
 git submodule update --init --progress $BASE_DIR/../../theme/solarized
 # Then, Apply in 'Preferences', as README.md
+
+# Install Powerline fonts to support Agnoster theme
+powerline_fonts_dir=$BASE_DIR/../../theme/powerline-fonts
+git submodule update --init --progress $powerline_fonts_dir
+$powerline_fonts_dir/install.sh
