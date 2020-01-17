@@ -5,6 +5,9 @@
 # Usage:
 #   source $this
 
+export IS_ZSH="$ZSH_VERSION"
+export IS_BASH="$BASH_VERSION"
+
 # Include a shared common rc file to local.
 #
 # $1: local(target) rc file
