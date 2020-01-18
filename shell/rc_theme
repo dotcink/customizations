@@ -6,5 +6,6 @@
 if [ "$IS_ZSH" ]; then
 #  export ZSH_THEME='agnoster'
   export ZSH_THEME='powerlevel9k/powerlevel9k'
+  plugins+=zsh-syntax-highlighting
   source $ZSH/oh-my-zsh.sh # apply above theme
 fi

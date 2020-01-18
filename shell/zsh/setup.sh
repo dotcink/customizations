@@ -20,7 +20,13 @@ $powerline_fonts_dir/install.sh
 powerlevel9k_link_to=~/.oh-my-zsh/custom/themes/powerlevel9k
 powerlevel9k_theme_dir=$BASE_DIR/theme/powerlevel9k
 git submodule update --init --progress $powerlevel9k_theme_dir
-[ ! -f $powerlevel9k_link_to ] && ln -s ~/customizations/shell/zsh/theme/powerlevel9k $powerlevel9k_link_to
+[ ! -f $powerlevel9k_link_to ] && ln -vs ~/customizations/shell/zsh/theme/powerlevel9k $powerlevel9k_link_to
+
+# Install syntax highlighting plugin
+plugin_link=~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+plugin_dir=$BASE_DIR/plugins/syntax-highlighting
+git submodule update --init --progress $plugin_dir
+[ ! -e $plugin_link ] && ln -vs $(pwd)/$plugin_dir $plugin_link
 
 # set DEFAULT_USER to hide "user@host" prompt prefix
 include_rc_to_local ~/.zshrc "export DEFAULT_USER=$USER" '^export DEFAULT_USER=' ''
