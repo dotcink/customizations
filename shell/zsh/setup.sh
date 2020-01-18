@@ -8,7 +8,8 @@ source $BASE_DIR/../../common/shrc
 sh -c "$(curl $CURL_PROXY_OPTION -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Solarized color theme
-git submodule update --init --progress $BASE_DIR/../../theme/solarized
+module_dir=$BASE_DIR/../../theme/solarized
+git submodule update --init --progress $module_dir
 # Then, Apply in 'Preferences', as README.md
 
 # Install Powerline fonts to support Agnoster theme
@@ -20,7 +21,7 @@ $powerline_fonts_dir/install.sh
 powerlevel9k_link_to=~/.oh-my-zsh/custom/themes/powerlevel9k
 powerlevel9k_theme_dir=$BASE_DIR/theme/powerlevel9k
 git submodule update --init --progress $powerlevel9k_theme_dir
-[ ! -f $powerlevel9k_link_to ] && ln -vs ~/customizations/shell/zsh/theme/powerlevel9k $powerlevel9k_link_to
+[ ! -e $powerlevel9k_link_to ] && ln -vs $(pwd)/$powerlevel9k_theme_dir $powerlevel9k_link_to
 
 # Install syntax highlighting plugin
 plugin_link=~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
