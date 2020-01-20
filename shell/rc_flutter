@@ -1,0 +1,18 @@
+# vim: ft=sh
+#
+# Usage:
+#   source $this
+
+# Dart
+export PATH="$HOME/Packages/flutter/bin/cache/dart-sdk/bin:$PATH"
+
+# flutter
+export PATH="$HOME/Packages/flutter/bin:$PATH"
+
+# flutter in China
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+
+# Android
+export ANDROID_HOME="$HOME/Library/Android/sdk/"
+export PATH="$HOME/Library/Android/sdk/platform-tools/:$PATH"
