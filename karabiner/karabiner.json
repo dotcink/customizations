@@ -399,6 +399,50 @@
                                     }
                                 ],
                                 "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "left_control"
+                                        },
+                                        {
+                                            "key_code": "spacebar"
+                                        }
+                                    ],
+                                    "simultaneous_options": {
+                                        "key_down_order": "strict"
+                                    }
+                                },
+                                "to_if_alone": {
+                                    "key_code": "spacebar",
+                                    "modifiers": [
+                                        "left_control"
+                                    ]
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "left_gui"
+                                        },
+                                        {
+                                            "key_code": "spacebar"
+                                        }
+                                    ],
+                                    "simultaneous_options": {
+                                        "key_down_order": "strict"
+                                    }
+                                },
+                                "to_if_alone": {
+                                    "key_code": "spacebar",
+                                    "modifiers": [
+                                        "left_gui"
+                                    ]
+                                },
+                                "type": "basic"
                             }
                         ]
                     },
