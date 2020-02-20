@@ -580,6 +580,14 @@
                                         "name": "spacefn_mode",
                                         "type": "variable_if",
                                         "value": 0
+                                    },
+                                    {
+                                        "type": "device_unless",
+                                        "identifiers": [
+                                          {
+                                            "vendor_id": 2131
+                                          }
+                                        ]
                                     }
                                 ],
                                 "from": {
