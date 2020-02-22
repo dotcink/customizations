@@ -28,6 +28,11 @@ fi
 alias ls='ls -G'
 alias ll='ls -l'
 
+funtion mkcd() {
+  mkdir $1
+  cd $1
+}
+
 ########  ########
 # vim
 ########  ########
