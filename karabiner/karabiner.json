@@ -582,12 +582,12 @@
                                         "value": 0
                                     },
                                     {
-                                        "type": "device_unless",
                                         "identifiers": [
-                                          {
-                                            "vendor_id": 2131
-                                          }
-                                        ]
+                                            {
+                                                "vendor_id": 2131
+                                            }
+                                        ],
+                                        "type": "device_unless"
                                     }
                                 ],
                                 "from": {
