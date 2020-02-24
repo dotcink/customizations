@@ -11,6 +11,8 @@ set number " show line number, `nonu[mber]` to disable
 set modeline
 set modelines=3
 
+set shiftwidth=2 " spaces for indent(>>, <<, etc.)
+
 ">^.^<--------------------------
 " Syntax & Highlight
 ">^.^<--------------------------
