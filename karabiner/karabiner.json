@@ -963,15 +963,15 @@
                                                 "language": "en"
                                             }
                                         ],
-                                        "type": "input_source_if"
+                                        "type": "input_source_unless"
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "left_command"
+                                    "key_code": "left_shift"
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_command",
+                                        "key_code": "left_shift",
                                         "lazy": true
                                     }
                                 ],
@@ -985,7 +985,7 @@
                                 ],
                                 "to_if_held_down": [
                                     {
-                                        "key_code": "left_command"
+                                        "key_code": "left_shift"
                                     }
                                 ],
                                 "type": "basic"
@@ -998,15 +998,15 @@
                                                 "language": "en"
                                             }
                                         ],
-                                        "type": "input_source_unless"
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "right_command"
+                                    "key_code": "right_shift"
                                 },
                                 "to": [
                                     {
-                                        "key_code": "right_command",
+                                        "key_code": "right_shift",
                                         "lazy": true
                                     }
                                 ],
@@ -1020,7 +1020,7 @@
                                 ],
                                 "to_if_held_down": [
                                     {
-                                        "key_code": "right_command"
+                                        "key_code": "right_shift"
                                     }
                                 ],
                                 "type": "basic"
