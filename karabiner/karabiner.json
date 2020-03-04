@@ -972,6 +972,35 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Command + Escape -> Command + `(only in SpaceFN mode, cause Escape is useful to exit Command+` mode)",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "spacefn_mode",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "escape",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_command"
+                                        ]
+                                    }
+                                },
+                                "to": {
+				    "key_code": "grave_accent_and_tilde",
+                                    "modifiers": [
+					"left_command"
+                                    ]
+                                },
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
