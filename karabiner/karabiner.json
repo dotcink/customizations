@@ -1077,6 +1077,20 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "m",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "shell_command": "open -a 'NeteaseMusic'"
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "t",
                                     "modifiers": {
                                         "mandatory": [
