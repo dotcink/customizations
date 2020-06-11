@@ -1,0 +1,13 @@
+#!/usr/bin/env perl
+#
+# vim: ft=perl
+#
+# Convert list of decimal numbers into hex
+#
+# Usage: d2h 123 456
+#
+# Origin: <CS:APP>
+
+for ($i = 0; $i < @ARGV; $i++) {
+    printf("%d\t= 0x%x\n", $ARGV[$i], $ARGV[$i]);
+}

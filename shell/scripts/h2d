@@ -1,0 +1,15 @@
+#!/usr/bin/env perl
+#
+# vim: ft=perl
+#
+# Convert list of hex numbers into decimal
+#
+# Usage: h2d 0xAC 0xFF91
+#
+# Origin: <CS:APP>
+
+for ($i = 0; $i < @ARGV; $i++) {
+  $val = hex($ARGV[$i]);
+  printf("0x%x = %d\n", $val, $val);
+}
+

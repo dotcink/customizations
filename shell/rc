@@ -9,6 +9,7 @@ source $HOME/customizations/shell/rc_theme
 source $HOME/customizations/shell/rc_flutter
 
 [ -d $HOME/bin/ ] && export PATH=$HOME/bin/:$PATH
+export PATH=$HOME/customizations/shell/scripts:$PATH
 
 ########  ########
 # shell
