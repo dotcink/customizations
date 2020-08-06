@@ -1063,6 +1063,20 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "l",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "shell_command": "open -a 'Lark'"
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "m",
                                     "modifiers": {
                                         "mandatory": [
@@ -1086,6 +1100,20 @@
                                 },
                                 "to": {
                                     "shell_command": "open -a 'Evernote'"
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "s",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "shell_command": "open -a 'Charles'"
                                 },
                                 "type": "basic"
                             },
@@ -1128,6 +1156,20 @@
                                 },
                                 "to": {
                                     "shell_command": "open -a 'WeChat'"
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "x",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "shell_command": "open -a 'Xcode'"
                                 },
                                 "type": "basic"
                             },
