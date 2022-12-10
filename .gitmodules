@@ -10,3 +10,7 @@
 [submodule "shell/zsh/plugins/syntax-highlighting"]
 	path = shell/zsh/plugins/syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "rime-wubi"]
+	path = rime-wubi
+	url = https://github.com/dotcink/rime-wubi86-jidian
+	branch = main
