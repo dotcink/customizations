@@ -12,5 +12,5 @@
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 [submodule "rime-wubi"]
 	path = rime-wubi
-	url = https://github.com/dotcink/rime-wubi86-jidian
+	url = git@github.com:dotcink/rime-wubi86-jidian.git
 	branch = main
