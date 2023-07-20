@@ -968,6 +968,20 @@
                             },
                             {
                                 "from": {
+                                    "key_code": "e",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "shell_command": "open -a 'Microsoft Edge'"
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
                                     "key_code": "f",
                                     "modifiers": {
                                         "mandatory": [
@@ -1018,7 +1032,7 @@
                                     }
                                 },
                                 "to": {
-                                    "shell_command": "open -a 'Lark'"
+                                    "shell_command": "open -a 'LarkSuite'"
                                 },
                                 "type": "basic"
                             },
@@ -1061,6 +1075,20 @@
                                 },
                                 "to": {
                                     "shell_command": "open -a 'Obsidian'"
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_command"
+                                        ]
+                                    }
+                                },
+                                "to": {
+                                    "shell_command": "open -a '抖音开发者工具'"
                                 },
                                 "type": "basic"
                             },
